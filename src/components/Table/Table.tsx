@@ -2,8 +2,8 @@ import { DataGrid } from '@mui/x-data-grid';
 import { useTableData } from '../../Hooks/useTableData';
 import biomData from '../../data/biom.json';
 
-export const Table = () => {
+export const Table = ({ ...rest }) => {
   const { columns, rows } = useTableData(biomData);
 
-  return <DataGrid columns={columns} rows={rows} />;
+  return <DataGrid {...rest} columns={columns} rows={rows} />;
 };

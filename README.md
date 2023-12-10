@@ -1,1 +1,1 @@
-For start project you need just call command npm install and after that npm run dev
+For start project you need just call command npm install and after that npm run dev, for test npm run test
